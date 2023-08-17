@@ -1,0 +1,14 @@
+var xmldom = new ActiveXObject("Microsoft.XMLDOM");
+xmldom.async = false;
+if (!xmldom.load(document.FullName))
+{
+	var error = xmldom.parseError;
+	alert("XML文法エラーが発生しました :"+ error.reason +
+	     "\nURL :"+ error.reason +
+	     "\n行 :"+ error.line +", 列 :"+ error.linepos);
+	    document.selection.SetActivePoint(eePosLogicalA, error.linepos, error.line);
+    
+} else {
+	status = "この文書はXMLの文法を満たしています";
+}
+	
