@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<!--EmEditor Snippets file-->
+<Snippets>
+<SnippetTree>
+	<Folder Name="Ruby on Rails" Flags="3" ConfigEdit="" ConfigMacro="" ConfigsAssociate="\RHTML\Ruby\">
+		<Item Name="&lt;%= Fixtures.identify(:symbol) %&gt;" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}Fixtures.identify(:${1:name})${TM_RAILS_TEMPLATE_END_RUBY_EXPR}$0" Trigger="fi" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="accepts_nested_attributes_for" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="accepts_nested_attributes_for :${1:association_name}${2:${3:, :allow_destroy =&gt; true}${4:, :reject_if =&gt; proc { |obj| ${5:obj.blank?} \}}}" Trigger="anaf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="after_create" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="after_create" Trigger="aftc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="after_destroy" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="after_destroy" Trigger="aftd" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="after_save" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="after_save" Trigger="afts" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="after_update" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="after_update" Trigger="aftu" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="after_validation" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="after_validation" Trigger="aftv" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="after_validation_on_create" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="after_validation_on_create" Trigger="aftvoc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="after_validation_on_update" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="after_validation_on_update" Trigger="aftvou" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="alias_attribute" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="alias_attribute :${1:new_name}, :${2:old_name}" Trigger="alias" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert(var = assigns(:var))" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert(${1:var} = assigns(:${1}), &quot;Cannot find @${1}&quot;)
+$0" Trigger="asg" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_difference" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_difference &quot;${1:Model}.${2:count}&quot;, ${3:1} do
+  $0
+end" Trigger="asd" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_no_difference" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_no_difference &quot;${1:Model}.${2:count}&quot; do
+  $0
+end" Trigger="asnd" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_redirected_to" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_redirected_to ${2::action =&gt; &quot;${1:index}&quot;}" Trigger="asrt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_redirected_to (nested path plural)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_redirected_to ${10:${2:parent}_${3:child}_path(${4:@}${5:${2}})}" Trigger="asrt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_redirected_to (nested path)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_redirected_to ${2:${12:parent}_${13:child}_path(${14:@}${15:${12}}, ${16:@}${17:${13}})}" Trigger="asrt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_redirected_to (path plural)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_redirected_to ${10:${2:model}s_path}" Trigger="asrt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_redirected_to (path)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_redirected_to ${2:${12:model}_path(${13:@}${14:${12}})}" Trigger="asrt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_response" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_response :${1:success}, @response.body$0" Trigger="asre" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_rjs" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_rjs :${1:replace}, ${2:&quot;${3:dom id}&quot;}" Trigger="asrj" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="assert_select" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="assert_select '${1:path}'${2:, :${3:text} =&gt; ${4:'${5:inner_html}'}}${6: do
+	$0
+end}" Trigger="ass" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_create" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_create" Trigger="befc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_destroy" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_destroy" Trigger="befd" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_filter" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_filter :${1:method}${2:${3:, :only =&gt; ${4:[:${5:action}, :${6:action}]}}${7:, :except =&gt; ${8:[:${9:action}, :${10:action}]}}}" Trigger="bf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_save" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_save" Trigger="befs" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_update" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_update" Trigger="befu" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_validation" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_validation" Trigger="befv" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_validation_on_create" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_validation_on_create" Trigger="befvoc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="before_validation_on_update" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="before_validation_on_update" Trigger="befvou" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="belongs_to" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="belongs_to :${1:object}${2:, :class_name =&gt; &quot;${3:${1/[[:alpha:]]+|(_)/(?1::\u$0)/g}}&quot;, :foreign_key =&gt; &quot;${4:${1}_id}&quot;}" Trigger="bt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="cattr_accessor" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="cattr_accessor :${0:attr_names}" Trigger="crw" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="config.gem" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="config.gem &quot;${1:name}&quot;${2:${3:, :lib =&gt; ${4:&quot;${5:$1}&quot;}}${6:, :version =&gt; &quot;${7:&gt;= 1.0.0}&quot;}}" Trigger="config.gem" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="content_for" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="&lt;% content_for :${1:yield_label_in_layout} do -%&gt;
+	$0
+&lt;% end -%&gt;" Trigger="conf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Create Column in Table" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.column ${1:title}, :${2:string}
+$0" Trigger="mcol" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Create controller class" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="class ${1:Model}Controller &lt; ApplicationController
+	before_filter :find_${2:model}
+
+	$0
+
+	private
+	def find_${2}
+		@$2 = ${3:$1}.find(params[:id]) if params[:id]
+	end
+end" Trigger="cla" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Create functional test class" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="require File.dirname(__FILE__) + '/../test_helper'
+
+class ${1:Model}ControllerTest &lt; ActionController::TestCase
+	deft$0
+end" Trigger="cla" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Create resources controller class" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="class ${1:Model}sController &lt; ApplicationController
+  before_filter :find_${1/./\l$0/}, :only =&gt; [:show, :edit, :update, :destroy]
+
+  # GET /${1/./\l$0/}s
+  # GET /${1/./\l$0/}s.xml
+  def index
+    @${1/./\l$0/}s = ${1:Model}.all
+
+    respond_to do |wants|
+      wants.html # index.html.erb
+      wants.xml  { render :xml =&gt; @${1/./\l$0/}s }
+    end
+  end
+
+  # GET /${1/./\l$0/}s/1
+  # GET /${1/./\l$0/}s/1.xml
+  def show
+    respond_to do |wants|
+      wants.html # show.html.erb
+      wants.xml  { render :xml =&gt; @${1/./\l$0/} }
+    end
+  end
+
+  # GET /${1/./\l$0/}s/new
+  # GET /${1/./\l$0/}s/new.xml
+  def new
+    @${1/./\l$0/} = ${1:Model}.new
+
+    respond_to do |wants|
+      wants.html # new.html.erb
+      wants.xml  { render :xml =&gt; @${1/./\l$0/} }
+    end
+  end
+
+  # GET /${1/./\l$0/}s/1/edit
+  def edit
+  end
+
+  # POST /${1/./\l$0/}s
+  # POST /${1/./\l$0/}s.xml
+  def create
+    @${1/./\l$0/} = ${1:Model}.new(params[:${1/./\l$0/}])
+
+    respond_to do |wants|
+      if @${1/./\l$0/}.save
+        flash[:notice] = '${1:Model} was successfully created.'
+        wants.html { redirect_to(@${1/./\l$0/}) }
+        wants.xml  { render :xml =&gt; @${1/./\l$0/}, :status =&gt; :created, :location =&gt; @${1/./\l$0/} }
+      else
+        wants.html { render :action =&gt; &quot;new&quot; }
+        wants.xml  { render :xml =&gt; @${1/./\l$0/}.errors, :status =&gt; :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /${1/./\l$0/}s/1
+  # PUT /${1/./\l$0/}s/1.xml
+  def update
+    respond_to do |wants|
+      if @${1/./\l$0/}.update_attributes(params[:${1/./\l$0/}])
+        flash[:notice] = '${1:Model} was successfully updated.'
+        wants.html { redirect_to(@${1/./\l$0/}) }
+        wants.xml  { head :ok }
+      else
+        wants.html { render :action =&gt; &quot;edit&quot; }
+        wants.xml  { render :xml =&gt; @${1/./\l$0/}.errors, :status =&gt; :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /${1/./\l$0/}s/1
+  # DELETE /${1/./\l$0/}s/1.xml
+  def destroy
+    @${1/./\l$0/}.destroy
+
+    respond_to do |wants|
+      wants.html { redirect_to(${1/./\l$0/}s_url) }
+      wants.xml  { head :ok }
+    end
+  end
+
+  private
+    def find_${1/./\l$0/}
+      @${1/./\l$0/} = ${1:Model}.find(params[:id])
+    end
+
+end" Trigger="resources" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Create Several Columns in Table" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.column ${1:title}, :${2:string}
+mccc$0" Trigger="mccc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="def create - resource" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="def create
+	@${1:model} = ${2:${1/[[:alpha:]]+|(_)/(?1::\u$0)/g}}.new(params[:$1])
+	$0
+	respond_to do |wants|
+		if @$1.save
+			flash[:notice] = '$2 was successfully created.'
+			wants.html { redirect_to(@$1) }
+			wants.xml { render :xml =&gt; @$1, :status =&gt; :created, :location =&gt; @$1 }
+		else
+			wants.html { render :action =&gt; &quot;new&quot; }
+			wants.xml { render :xml =&gt; @$1.errors, :status =&gt; :unprocessable_entity }
+		end
+	end
+end" Trigger="defcreate" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="def test_should_get_action" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="def test_should_get_${1:action}
+	${2:@${3:model} = ${4:$3s}(:${5:fixture_name})
+	}get :${1}${6:, :id =&gt; @$3.to_param}
+	assert_response :success
+	$0
+end" Trigger="deftg" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="def test_should_post_action" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="def test_should_post_${1:action}
+	${3:@$2 = ${4:$2s}(:${5:fixture_name})
+	}post :${1}${6:, :id =&gt; @$2.to_param}, :${2:model} =&gt; { $0 }
+	assert_response :redirect
+
+end" Trigger="deftp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="default_scope" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="default_scope :${1:order} =&gt; ${2:'created_at DESC'}${3:, :joins =&gt; :${4:table}}" Trigger="dc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Drop / Create Table" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="drop_table :${1:table}${2: [press tab twice to generate create_table]}" Trigger="mtab" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="end (ERB)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="&lt;% end -%&gt;" Trigger="end" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.check_box (ffcb)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.check_box :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.fields_for (nff)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_INLINE}f.fields_for :${1:attribute} do |${2:f}|${TM_RAILS_TEMPLATE_END_RUBY_INLINE}
+	$0
+${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.file_field (ffff)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.file_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.hidden_field (ffhf)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.hidden_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.label (ffl)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.label :${1:attribute}${2:, &quot;${3:${1/[[:alpha:]]+|(_)/(?1: :\u$0)/g}}&quot;}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.password_field (ffpf)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.password_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.radio_button (ffrb)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.radio_button :${1:attribute}, :${2:tag_value}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.submit (ffs)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.submit &quot;${1:Submit}&quot;${2:, :disable_with =&gt; '${3:$1ing...}'}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.text_area (ffta)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_area :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="f.text_field (fftf)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="f." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="fields_for" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_INLINE}fields_for :${1:model}, @${2:$1} do |$1|${TM_RAILS_TEMPLATE_END_RUBY_INLINE}
+  $0
+${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}" Trigger="fields" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="find(:all)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="find(:all${1:, :conditions =&gt; ['${2:${3:field} = ?}', ${5:true}]})" Trigger="fina" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="find(:first)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="find(:first${1:, :conditions =&gt; ['${2:${3:field} = ?}', ${5:true}]})" Trigger="finf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="find(:last)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="find(:last${1:, :conditions =&gt; ['${2:${3:field} = ?}', ${5:true}]})" Trigger="finl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="find(id)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="find(${1:id})" Trigger="fini" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="find_each" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="find_each(${1::conditions =&gt; {:${2:field} =&gt; ${3:true}\}}) do |${4:${TM_CURRENT_WORD/(\w+)\./\L$1/g}}|
+	$0
+end" Trigger="fine" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="find_in_batches" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="find_in_batches(${1::conditions =&gt; {:${2:field} =&gt; ${3:true}\}}) do |${4:${TM_CURRENT_WORD/(\w+)\./\L$1/g}}s|
+	$4s.each do |$4|
+		$0
+	end
+end" Trigger="finb" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="flash[…]" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="flash[:${1:notice}] = &quot;${2:Successfully created...}&quot;$0" Trigger="flash" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="for loop in rhtml" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="&lt;% if !${1:list}.blank? %&gt;
+  &lt;% for ${2:item} in ${1} %&gt;
+    $3
+  &lt;% end %&gt;
+&lt;% else %&gt;
+  $4
+&lt;% end %&gt;" Trigger="for" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_for @${1:model} do |f|${TM_RAILS_TEMPLATE_END_RUBY_INLINE}
+  $0
+${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}" Trigger="ff" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for check_box" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.check_box :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffcb" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for fields_for" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_INLINE}f.fields_for :${1:attribute} do |${2:f}|${TM_RAILS_TEMPLATE_END_RUBY_INLINE}
+	$0
+${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}" Trigger="nff" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for file_field" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.file_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffff" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for hidden_field" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.hidden_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffhf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for label" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.label :${1:attribute}${2:, &quot;${3:${1/[[:alpha:]]+|(_)/(?1: :\u$0)/g}}&quot;}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for password_field" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.password_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffpf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for radio_button" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.radio_button :${1:attribute}, :${2:tag_value}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffrb" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for submit" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.submit &quot;${1:Submit}&quot;${2:, :disable_with =&gt; '${3:$1ing...}'}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffs" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for text_area" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_area :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ffta" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for text_field" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="fftf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_for with errors" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}error_messages_for :${1:model}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}
+
+${TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_for @${2:$1} do |f|${TM_RAILS_TEMPLATE_END_RUBY_INLINE}
+  $0
+${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}" Trigger="ffe" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="form_tag" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_tag(${1::action =&gt; &quot;${5:update}&quot;}${6:, {:${8:class} =&gt; &quot;${9:form}&quot;\}}) do${TM_RAILS_TEMPLATE_END_RUBY_EXPR}
+  $0
+${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}" Trigger="ft" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="has_and_belongs_to_many" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="has_and_belongs_to_many :${1:object}${2:, :join_table =&gt; &quot;${3:table_name}&quot;, :foreign_key =&gt; &quot;${4:${1}_id}&quot;}" Trigger="habtm" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="has_many" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="has_many :${1:object}s${2:, :class_name =&gt; &quot;${1}&quot;, :foreign_key =&gt; &quot;${4:reference}_id&quot;}" Trigger="hm" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="has_many (through)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="has_many :${1:objects}, :through =&gt; :${2:join_association}${3:, :source =&gt; :${4:${2}_table_foreign_key_to_${1}_table}}" Trigger="hmt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="has_many :dependent =&gt; :destroy" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="has_many :${1:object}s${2:, :class_name =&gt; &quot;${1}&quot;, :foreign_key =&gt; &quot;${4:reference}_id&quot;}, :dependent =&gt; :destroy$0" Trigger="hmd" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="has_one" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="has_one :${1:object}${2:, :class_name =&gt; &quot;${3:${1/[[:alpha:]]+|(_)/(?1::\u$0)/g}}&quot;, :foreign_key =&gt; &quot;${4:${1}_id}&quot;}" Trigger="ho" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="image_submit_tag" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}image_submit_tag(&quot;${1:agree.png}&quot;${2:${3:, :id =&gt; &quot;${4:${1/^(\w+)(\.\w*)?$/$1/}}&quot;}${5:, :name =&gt; &quot;${6:${1/^(\w+)(\.\w*)?$/$1/}}&quot;}${7:, :class =&gt; &quot;${8:${1/^(\w+)(\.\w*)?$/$1/}-button}&quot;}${9:, :disabled =&gt; ${10:false}}})${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="ist" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="image_tag" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}image_tag &quot;$1${2:.png}&quot;${3:${4:, :title =&gt; &quot;${5:title}&quot;}${6:, :class =&gt; &quot;${7:class}&quot;}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="it" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="javascript_include_tag" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}javascript_include_tag ${1::all}${2:, :cache =&gt; ${3:true}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="jit" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="layout" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="layout &quot;${1:template_name}&quot;${2:${3:, :only =&gt; ${4:[:${5:action}, :${6:action}]}}${7:, :except =&gt; ${8:[:${9:action}, :${10:action}]}}}" Trigger="layout" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (action)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to &quot;${1:link text...}&quot;, :action =&gt; &quot;${2:index}&quot;${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="lia" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (action, id)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to &quot;${1:link text...}&quot;, :action =&gt; &quot;${2:edit}&quot;, :id =&gt; ${3:@item}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="liai" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (controller)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to &quot;${1:link text...}&quot;, :controller =&gt; &quot;${2:items}&quot;${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="lic" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (controller, action)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to &quot;${1:link text...}&quot;, :controller =&gt; &quot;${2:items}&quot;, :action =&gt; &quot;${3:index}&quot;${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="lica" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (controller, action, id)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to &quot;${1:link text...}&quot;, :controller =&gt; &quot;${2:items}&quot;, :action =&gt; &quot;${3:edit}&quot;, :id =&gt; ${4:@item}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="licai" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (nested path plural)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:&quot;${2:link text...}&quot;}, ${3:${10:parent}_${11:child}_path(${12:@}${13:${10}})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="linpp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (nested path)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:&quot;${2:link text...}&quot;}, ${3:${12:parent}_${13:child}_path(${14:@}${15:${12}}, ${16:@}${17:${13}})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="linp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (path plural)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:&quot;${2:link text...}&quot;}, ${3:${4:model}s_path}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="lipp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to (path)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:&quot;${2:link text...}&quot;}, ${3:${12:model}_path(${13:@}${14:${12}})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="lip" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="link_to model" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:model}.${2:name}, ${3:${4:$1}_path(${14:$1})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="lim" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="logger.debug" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${1:Rails.}logger.debug { &quot;${2:message}&quot; }$0" Trigger="logd" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="logger.error" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="logger.error { &quot;${1:message}&quot; }$0" Trigger="loge" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="logger.fatal" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="logger.fatal { &quot;${1:message}&quot; }$0" Trigger="logf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="logger.info" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="logger.info { &quot;${1:message}&quot; }$0" Trigger="logi" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="logger.warn" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="logger.warn { &quot;${1:message}&quot; }$0" Trigger="logw" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="map(&amp;:sym_proc)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="map(&amp;:${1:id})" Trigger="mp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="map.catch_all" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${1:map}.catch_all &quot;*${2:anything}&quot;, :controller =&gt; &quot;${3:default}&quot;, :action =&gt; &quot;${4:error}&quot;" Trigger="mapca" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="map.named_route" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${1:map}.${2:connect} '${3::controller/:action/:id}'" Trigger="map" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="map.resource" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${1:map}.resource :${2:resource}${10: do |${11:$2}|
+  $0
+end}" Trigger="mapr" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="map.resources" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${1:map}.resources :${2:resource}${10: do |${11:$2}|
+  $0
+end}" Trigger="maprs" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="map.with_options" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${1:map}.with_options :${2:controller} =&gt; '${3:thing}' do |${4:$3}|
+	$0
+end" Trigger="mapwo" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="mattr_accessor" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="mattr_accessor :${0:attr_names}" Trigger="mrw" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="named_scope" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="named_scope :${1:name}${2:, :joins =&gt; :${3:table}}, :conditions =&gt; ${4:['${5:${6:field} = ?}', ${7:true}]}" Trigger="nc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="named_scope lambda" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="named_scope :${1:name}, lambda { |${2:param}| { :conditions =&gt; ${3:['${4:${5:field} = ?}', ${6:$2}]} } }" Trigger="ncl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="page.hide (*ids)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="page.hide ${1:&quot;${2:id(s)}&quot;}" Trigger="hide" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="page.insert_html (position, id, partial)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="page.insert_html :${1:top}, ${2:&quot;${3:id}&quot;}, :${4:partial =&gt; &quot;${5:template}&quot;}" Trigger="ins" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="page.replace (id, partial)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="page.replace ${1:&quot;${2:id}&quot;}, :${3:partial =&gt; &quot;${4:template}&quot;}" Trigger="rep" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="page.replace_html (id, partial)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="page.replace_html ${1:&quot;${2:id}&quot;}, :${3:partial =&gt; &quot;${4:template}&quot;}" Trigger="reph" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="page.show (*ids)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="page.show ${1:&quot;${2:id(s)}&quot;}" Trigger="show" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="page.toggle (*ids)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="page.toggle ${1:&quot;${2:id(s)}&quot;}" Trigger="tog" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="page.visual_effect (effect, id)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="page.visual_effect :${1:toggle_slide}, ${2:&quot;${3:DOM ID}&quot;}" Trigger="vis" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="params[…]" Flags="0" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="params[:${1:id}]" Trigger="" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Rails.logger.debug" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="Rails.logger.debug &quot;${1:message}&quot;" Trigger="deb" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (action)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to :action =&gt; &quot;${1:index}&quot;" Trigger="rea" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (action, id)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to :action =&gt; &quot;${1:show}&quot;, :id =&gt; ${0:@item}" Trigger="reai" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (controller)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to :controller =&gt; &quot;${1:items}&quot;" Trigger="rec" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (controller, action)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to :controller =&gt; &quot;${1:items}&quot;, :action =&gt; &quot;${2:list}&quot;" Trigger="reca" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (controller, action, id)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to :controller =&gt; &quot;${1:items}&quot;, :action =&gt; &quot;${2:show}&quot;, :id =&gt; ${0:@item}" Trigger="recai" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (nested path plural)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to(${2:${10:parent}_${11:child}_path(${12:@}${13:${10}})})" Trigger="renpp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (nested path)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to(${2:${12:parent}_${13:child}_path(${14:@}${15:${12}}, ${16:@}${17:${13}})})" Trigger="renp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (path plural)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to(${2:${10:model}s_path})" Trigger="repp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to (path)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to(${2:${12:model}_path(${13:@}${14:${12}})})" Trigger="rep" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="redirect_to :back" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="redirect_to :back" Trigger="reb" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Remove / Add Column" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="remove_column :${1:table}, :${2:column}${3: [press tab twice to generate add_column]}" Trigger="mcol" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (action)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :action =&gt; &quot;${1:action}&quot;" Trigger="ra" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (action, layout)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :action =&gt; &quot;${1:action}&quot;, :layout =&gt; &quot;${2:layoutname}&quot;" Trigger="ral" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (file)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :file =&gt; &quot;${1:filepath}&quot;" Trigger="rf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (file, use_full_path)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :file =&gt; &quot;${1:filepath}&quot;, :use_full_path =&gt; ${2:false}" Trigger="rfu" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (inline)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :inline =&gt; &quot;${1:&lt;%= 'hello' %&gt;}&quot;" Trigger="ri" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (inline, locals)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :inline =&gt; &quot;${1:&lt;%= 'hello' %&gt;}&quot;, :locals =&gt; { ${2::name} =&gt; &quot;${3:value}&quot;$4 }" Trigger="ril" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (inline, type)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :inline =&gt; &quot;${1:&lt;%= 'hello' %&gt;}&quot;, :type =&gt; ${2::rxml}" Trigger="rit" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (layout)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :layout =&gt; &quot;${1:layoutname}&quot;" Trigger="rl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (nothing)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :nothing =&gt; ${1:true}" Trigger="rn" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (nothing, status)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :nothing =&gt; ${1:true}, :status =&gt; ${2:401}" Trigger="rns" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (partial)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :partial =&gt; &quot;${1:item}&quot;" Trigger="rp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (partial, collection)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :partial =&gt; &quot;${1:item}&quot;, :collection =&gt; ${2:@$1s}" Trigger="rpc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (partial, locals)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :partial =&gt; &quot;${1:item}&quot;, :locals =&gt; { :${2:$1} =&gt; ${3:@$1}$0 }" Trigger="rpl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (partial, object)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :partial =&gt; &quot;${1:item}&quot;, :object =&gt; ${2:@$1}" Trigger="rpo" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (partial, status)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :partial =&gt; &quot;${1:item}&quot;, :status =&gt; ${2:500}" Trigger="rps" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (text)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :text =&gt; &quot;${1:text to render...}&quot;" Trigger="rt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (text, layout =&gt; true)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :text =&gt; &quot;${1:text to render...}&quot;, :layout =&gt; ${2:true}" Trigger="rtlt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (text, layout)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :text =&gt; &quot;${1:text to render...}&quot;, :layout =&gt; &quot;${2:layoutname}&quot;" Trigger="rtl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (text, status)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :text =&gt; &quot;${1:text to render...}&quot;, :status =&gt; ${2:401}" Trigger="rts" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="render (update)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="render :update do |${2:page}|
+	$2.$0
+end" Trigger="ru" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="respond_to" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="respond_to do |wants|
+	wants.${1:html}${2: { $0 \}}
+end" Trigger="rest" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="respond_to (html)" Flags="0" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="respond_to do |wants|
+	wants.html do
+		$TM_SELECTED_TEXT
+	end
+	wants.${1:js} { $0 }
+end" Trigger="" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="returning do |variable| … end" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="returning ${1:variable} do${2/(^(?&lt;var&gt;\s*[a-z_][a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1: |)/}${2:v}${2/(^(?&lt;var&gt;\s*[a-z_][a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1:|)/}
+	$0
+end" Trigger="returning" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="scoped_by" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="scoped_by_${1:attribute}(${2:id})" Trigger="sb" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="session[…]" Flags="0" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="session[:${1:user}]" Trigger="" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="stylesheet_link_tag" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}stylesheet_link_tag ${1::all}${2:, :cache =&gt; ${3:true}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="slt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="submit_tag" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="${TM_RAILS_TEMPLATE_START_RUBY_EXPR}submit_tag &quot;${1:Save changes}&quot;${2:, :id =&gt; &quot;${3:submit}&quot;}${4:, :name =&gt; &quot;${5:$3}&quot;}${6:, :class =&gt; &quot;${7:form_$3}&quot;}${8:, :disabled =&gt; ${9:false}}${10:, :disable_with =&gt; &quot;${11:Please wait...}&quot;}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}" Trigger="st" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.binary (tcbi)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.binary :${1:title}${2:, :limit =&gt; ${3:2}.megabytes}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.boolean (tcb)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.boolean :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.change (tch)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.change :${1:name}${2:, :${3:string}${4:, :${5:limit} =&gt; ${6:80}}}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.date (tcda)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.date :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.datetime (tcdt)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.datetime :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.decimal (tcd)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.decimal :${1:title}${2:${3:, :precision =&gt; ${4:10}}${5:, :scale =&gt; ${6:2}}}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.float (tcf)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.float :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.integer (tci)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.integer :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.lock_version (tcl)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.integer :lock_version, :null =&gt; false, :default =&gt; 0
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.references (tcr)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.references :${1:taggable}${2:, :polymorphic =&gt; ${3:{ :default =&gt; '${4:Photo}' \}}}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.rename (tre)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.rename :${1:old_column_name}, :${2:new_column_name}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.string (tcs)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.string :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.text (tct)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.text :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.time (tcti)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.time :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.timestamp (tcts)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.timestamp :${1:title}
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="t.timestamps (tctss)" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.timestamps
+t.$0" Trigger="t." Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column binary" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.binary :${1:title}${2:, :limit =&gt; ${3:2}.megabytes}
+$0" Trigger="tcbi" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column boolean" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.boolean :${1:title}
+$0" Trigger="tcb" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column date" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.date :${1:title}
+$0" Trigger="tcda" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column datetime" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.datetime :${1:title}
+$0" Trigger="tcdt" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column decimal" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.decimal :${1:title}${2:${3:, :precision =&gt; ${4:10}}${5:, :scale =&gt; ${6:2}}}
+$0" Trigger="tcd" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column float" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.float :${1:title}
+$0" Trigger="tcf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column integer" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.integer :${1:title}
+$0" Trigger="tci" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column lock_version" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.integer :lock_version, :null =&gt; false, :default =&gt; 0
+$0" Trigger="tcl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column string" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.string :${1:title}
+$0" Trigger="tcs" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column text" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.text :${1:title}
+$0" Trigger="tct" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column time" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.time :${1:title}
+$0" Trigger="tcti" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column timestamp" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.timestamp :${1:title}
+$0" Trigger="tcts" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column timestamps" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.timestamps
+$0" Trigger="tctss" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column(s) change" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.change :${1:name}${2:, :${3:string}${4:, :${5:limit} =&gt; ${6:80}}}
+$0" Trigger="tch" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column(s) references" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.references :${1:taggable}${2:, :polymorphic =&gt; ${3:{ :default =&gt; '${4:Photo}' \}}}
+$0" Trigger="tcr" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="Table column(s) rename" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="t.rename :${1:old_column_name}, :${2:new_column_name}
+$0" Trigger="tre" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="test do..end" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="test &quot;${1:something interesting}&quot; do
+	$0
+end" Trigger="test" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_acceptance_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_acceptance_of :${1:terms}${2:${3:, :accept =&gt; &quot;${4:1}&quot;}${5:, :message =&gt; &quot;${6:You must accept the terms of service}&quot;}}" Trigger="vao" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_acceptance_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_acceptance_of :${1:terms}${2:${3:, :accept =&gt; &quot;${4:1}&quot;}${5:, :message =&gt; &quot;${6:You must accept the terms of service}&quot;}}, :if =&gt; proc { |obj| ${7:obj.condition?} }}" Trigger="vaoif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_associated" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_associated :${1:attribute}${2:, :on =&gt; :${3:create}}" Trigger="va" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_associated if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_associated :${1:attribute}${2:, :on =&gt; :${3:create}, :if =&gt; proc { |obj| ${5:obj.condition?} }}" Trigger="vaif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_confirmation_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_confirmation_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:should match confirmation}&quot;}" Trigger="vc" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_confirmation_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_confirmation_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:should match confirmation}&quot;, :if =&gt; proc { |obj| ${5:obj.condition?} }}" Trigger="vcif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_exclusion_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_exclusion_of :${1:attribute}${2:, :in =&gt; ${3:%w( ${4:mov avi} )}, :on =&gt; :${5:create}, :message =&gt; &quot;${6:extension %s is not allowed}&quot;}" Trigger="ve" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_exclusion_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_exclusion_of :${1:attribute}${2:, :in =&gt; ${3:%w( ${4:mov avi} )}, :on =&gt; :${5:create}, :message =&gt; &quot;${6:extension %s is not allowed}&quot;}, :if =&gt; proc { |obj| ${7:obj.condition?} }}" Trigger="veif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_format_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_format_of :${1:attribute}, :with =&gt; /${2:^[${3:\w\d}]+\$}/${4:, :on =&gt; :${5:create}, :message =&gt; &quot;${6:is invalid}&quot;}" Trigger="vf" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_format_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_format_of :${1:attribute}, :with =&gt; /${2:^[${3:\w\d}]+\$}/${4:, :on =&gt; :${5:create}, :message =&gt; &quot;${6:is invalid}&quot;}, :if =&gt; proc { |obj| ${7:obj.condition?} }}" Trigger="vfif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_inclusion_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_inclusion_of :${1:attribute}${2:, :in =&gt; ${3:%w( ${4:mov avi} )}, :on =&gt; :${5:create}, :message =&gt; &quot;${6:extension %s is not included in the list}&quot;}" Trigger="vi" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_inclusion_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_inclusion_of :${1:attribute}${2:, :in =&gt; ${3:%w( ${4:mov avi} )}, :on =&gt; :${5:create}, :message =&gt; &quot;${6:extension %s is not included in the list}&quot;}, :if =&gt; proc { |obj| ${7:obj.condition?} }}" Trigger="viif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_length_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_length_of :${1:attribute}, :within =&gt; ${2:3..20}${3:, :on =&gt; :${4:create}, :message =&gt; &quot;${5:must be present}&quot;}" Trigger="vl" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_length_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_length_of :${1:attribute}, :within =&gt; ${2:3..20}${3:, :on =&gt; :${4:create}, :message =&gt; &quot;${5:must be present}&quot;}, :if =&gt; proc { |obj| ${6:obj.condition?} }}" Trigger="vlif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_numericality_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_numericality_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:is not a number}&quot;}" Trigger="vn" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_numericality_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_numericality_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:is not a number}&quot;}, :if =&gt; proc { |obj| ${5:obj.condition?} }}" Trigger="vnif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_presence_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_presence_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:can't be blank}&quot;}" Trigger="vp" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_presence_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_presence_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:can't be blank}&quot;}, :if =&gt; proc { |obj| ${5:obj.condition?} }" Trigger="vpif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_uniqueness_of" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_uniqueness_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:must be unique}&quot;}" Trigger="vu" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="validates_uniqueness_of if" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="validates_uniqueness_of :${1:attribute}${2:, :on =&gt; :${3:create}, :message =&gt; &quot;${4:must be unique}&quot;, :if =&gt; proc { |obj| ${6:obj.condition?} }}" Trigger="vuif" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="verify — redirect" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="verify :only =&gt; [:$1], :session =&gt; :user, :params =&gt; :id, :redirect_to =&gt; {:action =&gt; '${2:index}'}" Trigger="verify" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="verify — render" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="verify :only =&gt; [:$1], :method =&gt; :post, :render =&gt; {:status =&gt; 500, :text =&gt; &quot;use HTTP-POST&quot;}" Trigger="verify" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="wants.format" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="wants.${1:js|xml|html}${2: { $0 \}}" Trigger="wants" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="xhr delete" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="xhr :delete, :${1:destroy}, :id =&gt; ${2:1}$0" Trigger="xdelete" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="xhr get" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="xhr :get, :${1:show}${2:, :id =&gt; ${3:1}}$0" Trigger="xget" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="xhr post" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="xhr :post, :${1:create}, :${2:object} =&gt; { $3 }" Trigger="xpost" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+		<Item Name="xhr put" Flags="4" ConfigEdit="" ConfigMacro="" ConfigsAssociate="" Text="xhr :put, :${1:update}, :id =&gt; ${2:1}, :${3:object} =&gt; { $4 }$0" Trigger="xput" Tip="" ShortcutKey="0" ShortcutVirt="0"/>
+	</Folder>
+</SnippetTree>
+</Snippets>

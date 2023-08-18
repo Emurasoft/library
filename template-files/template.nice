@@ -1,0 +1,9 @@
+﻿/* Name it "Hello.nice" 
+ * Compile it by running "nicec Hello.nice"
+ * Run it by typing "nice Hello"
+ */
+
+void main(String[] args)
+{ 
+	println("hello world"); 
+}
