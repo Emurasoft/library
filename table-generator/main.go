@@ -63,6 +63,8 @@ const heading = `# Library
 - [Theme](#theme)
 - [Uploaded](#uploaded)
 
+To save a file, right click on the link and select "Save link as."
+
 `
 
 type Record struct {
@@ -83,8 +85,6 @@ func formatDescriptions(records []*Record) {
 		"[", `\[`,
 		"]", `\]`,
 		"*", `\*`,
-		"-", `\-`,
-		"_", `\_`,
 		"|", `\|`,
 	)
 	for _, record := range records {
