@@ -2,8 +2,11 @@ package main
 
 import (
 	"bytes"
+	"cmp"
+	"fmt"
 	"github.com/gocarina/gocsv"
 	"os"
+	"slices"
 	"strings"
 	"text/template"
 )
@@ -22,11 +25,43 @@ func main() {
 
 	formatDescriptions(records)
 
-	result := recordsToTable(records)
-	if err := os.WriteFile("output.md", result, 0666); err != nil {
+	categories := splitCategories(records)
+
+	text := &bytes.Buffer{}
+	if _, err := text.WriteString(heading); err != nil {
+		panic(err)
+	}
+
+	for _, category := range categories {
+		if _, err := text.WriteString(fmt.Sprintf("# %s\n\n", category.Name)); err != nil {
+			panic(err)
+		}
+
+		tableText := recordsToTable(category.Records)
+		if _, err := text.Write(tableText); err != nil {
+			panic(err)
+		}
+	}
+
+	textBytes := text.Bytes()
+	textBytes = bytes.ReplaceAll(textBytes, []byte("\n"), []byte("\r\n"))
+
+	if err := os.WriteFile("../README.md", textBytes, 0666); err != nil {
 		panic(err)
 	}
 }
+
+const heading = `# Library
+- [Macros](#macros)
+- [Plug-ins (32-bit)]()
+- [Plug-ins (64-bit)]()
+- [Related Software]()
+- [Snippets]()
+- [Syntax Files]()
+- [Template Files]()
+- [Theme]()
+- [Uploaded]()
+`
 
 type Record struct {
 	FilePath        string `csv:"file_path"`
@@ -40,19 +75,53 @@ type Record struct {
 func formatDescriptions(records []*Record) {
 	replacer := strings.NewReplacer(
 		"&nbsp;", " ",
+		"\u00A0", " ",
 		"\r\n", "<br>",
 		"\n", "<br>",
+		"[", `\[`,
+		"]", `\]`,
+		"*", `\*`,
+		"-", `\-`,
+		"_", `\_`,
+		"|", `\|`,
 	)
 	for _, record := range records {
 		record.FileDescription = replacer.Replace(record.FileDescription)
 	}
 }
 
+type Category struct {
+	Name    string
+	Records []*Record
+}
+
+func splitCategories(records []*Record) []*Category {
+	categoryMap := make(map[string][]*Record)
+
+	for _, record := range records {
+		categoryMap[record.Category] = append(categoryMap[record.Category], record)
+	}
+
+	var result []*Category
+	for name, records := range categoryMap {
+		result = append(result, &Category{
+			Name:    name,
+			Records: records,
+		})
+	}
+
+	slices.SortFunc(result, func(a, b *Category) int {
+		return cmp.Compare(a.Name, b.Name)
+	})
+
+	return result
+}
+
 const tableTemplate = `| Description | File | Author |
 |-|-|-|
 {{range . -}}
-| <details><summary>{{.DisplayName}}</summary> {{.FileDescription}}</details> | {{.FileName}} | {{.Author}} |
-{{end -}}
+| <details><summary>{{.DisplayName}}</summary> {{.FileDescription}}</details> | [{{.FileName}}](https://raw.githubusercontent.com/Emurasoft/library/main/{{.FilePath}}) | {{.Author}} |
+{{end}}
 `
 
 func recordsToTable(records []*Record) []byte {
