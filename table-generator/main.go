@@ -33,7 +33,7 @@ func main() {
 	}
 
 	for _, category := range categories {
-		if _, err := text.WriteString(fmt.Sprintf("# %s\n\n", category.Name)); err != nil {
+		if _, err := text.WriteString(fmt.Sprintf("## %s\n\n", category.Name)); err != nil {
 			panic(err)
 		}
 

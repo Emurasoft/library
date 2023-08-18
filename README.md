@@ -10,7 +10,7 @@
 - [Theme](#theme)
 - [Uploaded](#uploaded)
 
-# Macros
+## Macros
 
 | Description | File | Author |
 |-|-|-|
@@ -97,7 +97,7 @@
 | <details><summary>Convert non-ASCII characters to decimal entities </summary> Macro converts selected non\-ASCII characters to XML decimal character references.</details> | [unicode2decimal.jsee](https://raw.githubusercontent.com/Emurasoft/library/main/macros/unicode2decimal.jsee) |  |
 | <details><summary>Convert non-ASCII characters to hexdecimal entities</summary> Macro converts selected non\-ASCII characters to XML hexadecimal character references.</details> | [unicode2hex.jsee](https://raw.githubusercontent.com/Emurasoft/library/main/macros/unicode2hex.jsee) |  |
 
-# Plug-ins (32-bit)
+## Plug-ins (32-bit)
 
 | Description | File | Author |
 |-|-|-|
@@ -189,7 +189,7 @@
 | <details><summary>XML Sense プラグイン (32ビット) XML入力中にリアルタイムにTIPヘルプを表示 </summary> ■機能説明<br><br>このプラグインは、EmEditorで編集中のXML文書の編集を追随して、TIPヘルプを<br>表示します。<br><br>■使い方<br><br>xmlsense.dll を EmEditor のセットアップ先フォルダの中の<br>PlugIns フォルダ (通常、C:Program FilesEmEditorPlugIns ) に移動<br>すると、すぐに利用できます。<br><br>■免責<br><br>このソフトウェアの使用によって発生したいかなる損害も、弊社が責任を負い<br>ません。使用者各自の自己責任の範疇においてご使用ください。<br>また、例えバグが発覚したとしても、それを修正する義務は弊社にはありませ<br>ん。ご了承ください。（もちろん、バグの報告は歓迎いたします。）<br><br>■転載条件<br><br>・アーカイブの内容が変更されない限り自由に行ってください。<br>・プラグインがバージョンアップした際は、速やかに周知していただける<br>と嬉しいです。<br>・事前事後でも構いませんので、どこに転載されたかお知らせいただけると<br>嬉しいです。<br><br><span style="color: #666666; font\-family: メイリオ, 'ＭＳ Ｐゴシック', Verdana, Helvetica, sans\-serif; font\-size: 12px; line\-height: 15px; text\-align: justify; background\-color: #fafafa;"> </span></details> | [xsens102.zip](https://raw.githubusercontent.com/Emurasoft/library/main/plugins-32bit/xsens102.zip) | 株式会社ユーワークス |
 | <details><summary>XML Validator plug-in (32-bit)</summary> <strong>2019\-07\-31 \- EmEditor v19.0 or later features Syntax Check as a core feature without plug\-ins, so this plug\-in is obsolete. Please use the latest version of EmEditor.</strong><br><br>Verifies XML documents opened in an EmEditor window with a Microsoft XML Parser.</details> | [xvalid101.exe](https://raw.githubusercontent.com/Emurasoft/library/main/plugins-32bit/xvalid101.exe) | YouWorks |
 
-# Plug-ins (64-bit)
+## Plug-ins (64-bit)
 
 | Description | File | Author |
 |-|-|-|
@@ -226,7 +226,7 @@
 | <details><summary>Transparent プラグイン （64ビット） ウィンドウ半透明表示 </summary> EmEditorのウィンドウを半透明表示にします。<br>海外のライブラリには既にあるようですが、64bit版がないらしいので。</details> | [transparent6410000.zip](https://raw.githubusercontent.com/Emurasoft/library/main/plugins-64bit/transparent6410000.zip) |  |
 | <details><summary>WordCount plug-in (64-bit) Displays the number of words </summary> <strong>This plug\-in does NOT work on the newest version of EmEditor.</strong><br><br><strong>本プラグインは EmEditor 最新版では動作しません。</strong><br><br>Displays the number of words in the selection.<br><br>The Word Complete plug\-in is already installed on EmEditor Professional v6 or later, and so you don't need to install this file if you are using EmEditor Professional v6 or later.<br><br>On Windows Vista, 7 or later, instead of double\-clicking the installer in Explorer, you will need to click the right mouse button on the file, and select "Run as Administrator" in the context menu.</details> | [wordcount500x64.exe](https://raw.githubusercontent.com/Emurasoft/library/main/plugins-64bit/wordcount500x64.exe) | Emurasoft |
 
-# Plug-ins (source code)
+## Plug-ins (source code)
 
 | Description | File | Author |
 |-|-|-|
@@ -269,7 +269,7 @@
 | <details><summary>Transparent プラグイン ソースコード </summary> ○ソースコードのライセンスについて<br>NYSL ver 0.9982 で公開します。<br>ただし、同梱されている plugin.h は Emurasoft, Inc. の著作物なのでNYSL適用外です。</details> | [transparent_1.0.0.zip](https://raw.githubusercontent.com/Emurasoft/library/main/plugins-source-code/transparent_1.0.0.zip) |  |
 | <details><summary>WordCount plug-in (source code)</summary> Displays the number of words in the selection.</details> | [wordcount500s.zip](https://raw.githubusercontent.com/Emurasoft/library/main/plugins-source-code/wordcount500s.zip) | Emurasoft |
 
-# Related Software
+## Related Software
 
 | Description | File | Author |
 |-|-|-|
@@ -281,14 +281,14 @@
 | <details><summary>EmEditorアイコンセット </summary> ◇新規追加◇<br>Assembler(asm)<br>C++(cxx/hpp/inl)<br>Cascading Style Sheets(css)<br>F#(fsi)<br>Java(java)<br>JavaScript(js)<br>PHP: Hypertext Preprocessor(php)<br>セットアップ情報(inf)<br>構成設定(ini)<br><br>◇拡張子一覧◇<br>Assembler(asm)<br>boo(boo)<br>C#(c#/cs)<br>C++(c/c++/cc/cpp/cxx/h/hpp/inl)<br>Cascading Style Sheets(css)<br>Cue Sheets(cue)<br>Delphi(dfm/dpr)<br>D言語(d)<br>F#(f#/fs/fsi)<br>Go 言語(go)<br>Java(java)<br>JavaScript(js)<br>Json(json)<br>Lazarus(lpr/lpi/lfm)<br>Lua(lua/wlua)<br>MSIL Assembler(il)<br>Music Macro Language(mml)<br>Objective\-C(m/mm)<br>OCaml(ml/mli)<br>Pascal(pas/pp)<br>Perl(cgi/pl/plw/pm)<br>PHP: Hypertext Preprocessor(php)<br>PowerShell(ps1/psd1/psm1/ps1xml)<br>Python(py/pyw)<br>Resource Script(rc)<br>RDF(rdf/rss)<br>Ruby(rb/rbw)<br>Squirrel(nut)<br>Tcl(tcl)<br>VB.NET(vb)<br>セットアップ情報(inf)<br>構成設定(ini)</details> | [emedicon.zip](https://raw.githubusercontent.com/Emurasoft/library/main/related-software/emedicon.zip) |  |
 | <details><summary>キーワード対応版 hh.exe </summary> マイクロソフトのHTMLヘルプを表示するプログラムは、hh.exe（Microsoft HTML Help Executable）ですが、<br>このプログラムは、キーワードに対応していません。<br><br>そこで、キーワードに対応した hh.exe と言う事で、hhh.exe を作成しました。<br><br>使い方： hhh.exe　"～.chm"　Keyword<br>外部HTMLヘルプを開き、キーワードの表示を行います。<br><br>このプログラムを使うと、EmEditorを外部HTMLヘルプに対応させる事が出来ます。<br><br>登録方法：<br>ツール(T)→外部ツール(E)→外部ツールの設定(C)<br>新規(N)/プロパティ(P)<br>タイトル(T)→外部HTMLヘルプ<br>コマンド(C)→hhh.exe<br>引数(A)→"～.chm" $(CurText)<br><br>キー設定方法：<br>ツール(T)→現在の設定のプロパティ(P)<br>キーボード<br>分類（C)→外部ツール<br>コマンド(O)→外部HTMLヘルプ<br>追加するショートカット・キー（N)→何でも可<br>割り当て(A) ボタンを押下（←重要）<br>OK ボタンを押下</details> | [hhh.exe](https://raw.githubusercontent.com/Emurasoft/library/main/related-software/hhh.exe) |  |
 
-# Snippets
+## Snippets
 
 | Description | File | Author |
 |-|-|-|
 | <details><summary>Ruby on Rails </summary> Several stretches for rapid development in Ruby on Rails. With them, EmEditor becomes the best way to develop Rails on Windows.</details> | [Ruby_on_Rails.eesnip](https://raw.githubusercontent.com/Emurasoft/library/main/snippets/Ruby_on_Rails.eesnip) |  |
 | <details><summary>Zen Coding macros and snippets </summary> It is very easy to use Zen Coding in EmEditor since EmEditor supports Javascript. In order for EmEditor to support Zen Macros, one only needs to edit the interface portion of Zen Coding, but the core part will need few or no changes.<br><br>There are two ways to use Zen Coding for EmEditor Professional. The first method is to utilize the Snippets plug\-in. This is the easiest method because it will automatically assign keyboard shortcuts for all the commands, and it allows you to bypass a popup menu.<br><br>To install Zen Coding for the Snippets plug\-in<br>==============================================<br><br>1. Copy "zen\_emeditor.jsee" to the My Macros folder. The My Macros folder usually exists under the My Documents folder. However, if you have never used macros before, this folder may not exist already. In that case, you can create My Macros folder under the My Documents folder, and then copy the macro into this folder.<br><br>2. If the Snippets custom bar is not visible, Select Snippets on the Tools > Plug\-ins (or click the Snippets button on the Plug\-ins Toolbar).<br><br>3. Right click on the Snippets custom bar to display a menu.<br><br>4. Select Import/Export > Import to Root...<br><br>5. Select "zen\-coding\-en.eesnip".<br><br>6. If you wish to use Zen Coding while the Snippets custom bar is hidden, you can right\-click on the Snippets button on the Plug\-ins Toolbar (or in the Snippets Custom Bar, select View > Plug\-in Properties), and click "Run Background".<br><br>In the Snippets Custom Bar, you will see a new folder named "Zen Coding", and in this folder you will see 17 new macro items. All of these macros are assigned with shortcut keys:<br><br>\- Balance Tag (Ctrl+Shift+D)<br>\- Decrement number by 0.1 (Ctrl+Shift+Num \-)<br>\- Decrement number by 1 (Ctrl+Num \-)<br>\- Decrement number by 10 (Shift+Num \-)<br>\- Evaluate Math Expression (Ctrl+=)<br>\- Expand Abbreviation (F12)<br>\- Go to Matching Pair (Ctrl+\[)<br>\- Increment number by 0.1 (Ctrl+Shift+Num +)<br>\- Increment number by 1 (Ctrl+Num +)<br>\- Increment number by 10 (Shift+Num +)<br>\- Merge Lines (Ctrl+Shift+M)<br>\- Next Edit Point (Ctrl+\)<br>\- Previous Edit Point (Ctrl+Shift+\)<br>\- Remove Tag (Ctrl+Shift+')<br>\- Split/Joint Tag (Ctrl+;)<br>\- Toggle Comment (Alt+/)<br>\- Wrap with Abbreviation (Ctrl+Shift+A)<br><br>The shortcut keys described above are for U.S. keyboards. International keyboards may have different key layouts and thus short cuts may be different. You can customize shortcut keys from each snippet properties.<br><br>To install Zen Coding as a direct macro<br>=======================================<br><br>1. Copy both "zen\_emeditor.jsee" and "zen\_popup\_menu.jsee" to the My Macros folder (usually My Documents\My Macros).<br><br>2. On the Macros menu, click on "Select...", and select "zen\_popup\_menu.jsee".<br><br>3. If you wish to assign a keyboard shortcut to run this macro, select "Properties for All Configuration" on the Tools menu. Click the Keyboard tab. Select "My Macros" on the Category drop\-down list, and select "zen\_popup\_menu.jsee". In the "Press New Shortcut Key" text box, press your favorite keyboard shortcut, and click the Assign button.<br><br>To use Zen Coding<br>=================<br><br>The most frequent action you would use is "Expand Abbreviation".<br><br>For instance, if you type "div#name", and press F12 (if you install as the Snippets), or run the "zen\_popup\_menu.jsee" macro and select "Expand Abbreviation", this abbreviation will expand to:<br><div id="name"></div><br>For more information about Zen Coding syntax and more useful actions, please refer to:<br><br>Zen Coding:<br><a href="http://code.google.com/p/zen\-coding/">http://code.google.com/p/zen\-coding/</a><br><br>Zen Coding syntax:<br><a href="http://code.google.com/p/zen\-coding/wiki/ZenHTMLSelectorsEn">http://code.google.com/p/zen\-coding/wiki/ZenHTMLSelectorsEn</a><br><br>HTML Elements:<br><a href="http://code.google.com/p/zen\-coding/wiki/ZenHTMLElementsEn">http://code.google.com/p/zen\-coding/wiki/ZenHTMLElementsEn</a><br><br>CSS Properties:<br><a href="http://code.google.com/p/zen\-coding/wiki/ZenCSSPropertiesEn">http://code.google.com/p/zen\-coding/wiki/ZenCSSPropertiesEn</a><br><br>Zen Coding cheatsheets:<br><a href="http://code.google.com/p/zen\-coding/wiki/CheatSheets">http://code.google.com/p/zen\-coding/wiki/CheatSheets</a><br><br>Special thanks to Sergey Chikuyonok and Zen Coding developers!<br><br>\-\-\-\-\-\-\-\-\-\-\-\-<br>May 13, 2010 First release<br>May 17, 2010 Snippet file (zen\-coding.eesnip) modified to work with all configurations.<br>May 18, 2010 Added Japanese\-localized Snppet file.<br>May 2, 2011 Support for Zen Coding v0.7. New commands include "Evaluate Math Expression", "Decrement number by 0.1/1/10", and "Increment number by 0.1/1/10". </details> | [zen_emeditor_0.7.zip](https://raw.githubusercontent.com/Emurasoft/library/main/snippets/zen_emeditor_0.7.zip) |  |
 
-# Syntax Files
+## Syntax Files
 
 | Description | File | Author |
 |-|-|-|
@@ -424,7 +424,7 @@
 | <details><summary>YAML syntax file </summary> YAML syntax file.</details> | [yaml.esy](https://raw.githubusercontent.com/Emurasoft/library/main/syntax-files/yaml.esy) |  |
 | <details><summary>Z80 Assembler syntax file (including equates for TI-86) </summary> Z80 Assembler syntax file (including equates for TI\-86).</details> | [z80.esy](https://raw.githubusercontent.com/Emurasoft/library/main/syntax-files/z80.esy) | Lillp |
 
-# Template Files
+## Template Files
 
 | Description | File | Author |
 |-|-|-|
@@ -433,7 +433,7 @@
 | <details><summary>Scala template file </summary> Scala template file.</details> | [template.scala](https://raw.githubusercontent.com/Emurasoft/library/main/template-files/template.scala) | Sean L. Palmer |
 | <details><summary>XSLT template file </summary> XSLT template file.</details> | [template.xsl](https://raw.githubusercontent.com/Emurasoft/library/main/template-files/template.xsl) | Will |
 
-# Theme
+## Theme
 
 | Description | File | Author |
 |-|-|-|
@@ -445,7 +445,7 @@
 | <details><summary>MinimalZen (bug fixed) </summary> Updated version, fixed bug of showing white background after the last line of text, in EmEditor version 9.</details> | [minimalzen_v101.eetheme](https://raw.githubusercontent.com/Emurasoft/library/main/theme/minimalzen_v101.eetheme) |  |
 | <details><summary>myDark Color Scheme </summary> My Dark color scheme.<br><br><span style="color: #666666; font\-family: Verdana, Helvetica, sans\-serif; font\-size: 12px; line\-height: 15px; text\-align: justify; background\-color: #fafafa;"> </span></details> | [mydarkcolor.eetheme](https://raw.githubusercontent.com/Emurasoft/library/main/theme/mydarkcolor.eetheme) |  |
 
-# Uploaded
+## Uploaded
 
 | Description | File | Author |
 |-|-|-|
