@@ -1,8 +1,2 @@
 github.com/gocarina/gocsv v0.0.0-20230616125104-99d496ca653d h1:KbPOUXFUDJxwZ04vbmDOc3yuruGvVO+LOa7cVER3yWw=
 github.com/gocarina/gocsv v0.0.0-20230616125104-99d496ca653d/go.mod h1:5YoVOkjYAQumqlV356Hj3xeYh4BdZuLE0/nRkf2NKkI=
-github.com/kataras/go-errors v0.0.3 h1:RQSGEb5AHjsGbwhNW8mFC7a9JrgoCLHC8CBQ4keXJYU=
-github.com/kataras/go-errors v0.0.3/go.mod h1:K3ncz8UzwI3bpuksXt5tQLmrRlgxfv+52ARvAu1+I+o=
-github.com/kataras/go-template v0.0.3 h1:qk2pj0Id22mlakJwnGdzxEXG8BSOkQKevYuusqYM9Zo=
-github.com/kataras/go-template v0.0.3/go.mod h1:JqfLbHRj72RbF6/nlqNv70nG+oN08JKt1tJCiDAMQCQ=
-github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
-github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
