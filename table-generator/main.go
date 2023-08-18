@@ -53,14 +53,15 @@ func main() {
 
 const heading = `# Library
 - [Macros](#macros)
-- [Plug-ins (32-bit)]()
-- [Plug-ins (64-bit)]()
-- [Related Software]()
-- [Snippets]()
-- [Syntax Files]()
-- [Template Files]()
-- [Theme]()
-- [Uploaded]()
+- [Plug-ins (32-bit)](#plug-ins-32-bit)
+- [Plug-ins (64-bit)](#plug-ins-64-bit)
+- [Plug-ins (source code)](#plug-ins-source-code)
+- [Related Software](#related-software)
+- [Snippets](#snippets)
+- [Syntax Files](#syntax-files)
+- [Template Files](#template-files)
+- [Theme](#theme)
+- [Uploaded](#uploaded)
 `
 
 type Record struct {
