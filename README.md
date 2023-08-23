@@ -1,4 +1,5 @@
-# Library
+# EmEditor Library
+
 - [Macros](#macros)
 - [Plug-ins (32-bit)](#plug-ins-32-bit)
 - [Plug-ins (64-bit)](#plug-ins-64-bit)
