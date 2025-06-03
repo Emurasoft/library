@@ -444,6 +444,7 @@ ion)", "copy the full name(include path)", and so on.</details> | [emeditor_perf
 | <details><summary>XSLT 1.0 + Xpath 1.0 syntax file </summary> XSLT 1.0 + Xpath 1.0 syntax file.</details> | [xslt.esy](https://raw.githubusercontent.com/Emurasoft/library/main/syntax-files/xslt.esy) | Masayuki Nakahara |
 | <details><summary>YAML syntax file </summary> YAML syntax file.</details> | [yaml.esy](https://raw.githubusercontent.com/Emurasoft/library/main/syntax-files/yaml.esy) |  |
 | <details><summary>Z80 Assembler syntax file (including equates for TI-86) </summary> Z80 Assembler syntax file (including equates for TI-86).</details> | [z80.esy](https://raw.githubusercontent.com/Emurasoft/library/main/syntax-files/z80.esy) | Lillp |
+| <details><summary>thinkScript syntax file</summary>thinkScript is the scripting language used by the stock market trading software called thinkorswim (https://www.schwab.com/trading/thinkorswim/desktop).</details> | [thinkscript.esy](https://raw.githubusercontent.com/Emurasoft/library/main/syntax-files/thinkscript.esy) | Bob Clarke |
 
 ## Template Files
 
